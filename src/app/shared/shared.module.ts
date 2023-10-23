@@ -3,13 +3,18 @@ import { CommonModule } from '@angular/common';
 import { MaterialModule } from './material.module';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { FullnamePipe } from './pipes/fullname.pipe';
+import { FormErrorsPipe } from './pipes/form-errors.pipe';
+
 
 
 
 @NgModule({
   declarations: [
     ToolbarComponent,
-    SidebarComponent
+    SidebarComponent,
+    FullnamePipe,
+    FormErrorsPipe
   ],
   imports: [
     CommonModule,
@@ -18,8 +23,9 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
   exports: [
     MaterialModule,
     ToolbarComponent,
-    SidebarComponent
-    
+    SidebarComponent,
+    FullnamePipe,
+    FormErrorsPipe   
   ]
 })
 export class SharedModule { }

@@ -1,4 +1,8 @@
-<button (click)="operUsersForm()" mat-flat-button color="primary">
+<button (click)="openUsersForm()" mat-flat-button color="primary">
     <mat-icon>add</mat-icon>
     Crear usuario
   </button>
+
+  <!-- {{ testUser | fullname }} -->
+
+  <app-users-table [dataSource]="users"></app-users-table>
